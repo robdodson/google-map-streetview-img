@@ -1,0 +1,31 @@
+<link rel="import" href="../polymer/polymer.html">
+
+<!--
+Element providing solution to no problem in particular.
+
+##### Example
+
+    <google-map-streetview-img></google-map-streetview-img>
+
+@element google-map-streetview-img
+@blurb Element providing solution to no problem in particular.
+@status alpha
+@url github.io
+-->
+
+<!--
+The `panoid` attribute does not yet have a purpose.
+@attribute panoid
+@type string
+-->
+
+<!--
+The `size` attribute does not yet have a purpose.
+@attribute size
+@type string
+-->
+<polymer-element name="google-map-streetview-img" attributes="panoid size fov heading pitch" noscript>
+  <template>
+    <img src="http://maps.googleapis.com/maps/api/streetview?size={{size}}&amp;fov={{fov}}&amp;heading={{heading}}&amp;pitch={{pitch}}&amp;pano={{panoid}}&amp;sensor=false">
+  </template>
+</polymer-element>
